@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A simple S3 bucket
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+Outputs:
+  BucketName:
+    Value: !Ref 'S3Bucket'
+    Description: NAme of the sample S3 buccket    
